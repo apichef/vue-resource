@@ -10,9 +10,9 @@ describe('install', () => {
         const app = new Vue();
 
         expect(app.$api()).toBeInstanceOf(Api);
-        expect(app.api()).toBeInstanceOf(Api);
+        expect(Vue.api()).toBeInstanceOf(Api);
 
         expect(app.$api().resource('post')).toBeInstanceOf(Resource);
-        expect(app.api().resource('post')).toBeInstanceOf(Resource);
+        expect(Vue.api().resource('post')).toBeInstanceOf(Resource);
     })
 })
